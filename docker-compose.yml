@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  light-app:
+    build: .
+    container_name: light-app
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
